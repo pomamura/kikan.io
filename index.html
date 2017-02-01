@@ -19,6 +19,27 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが500に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
 <!--// 生産性UP！業務効率化ツール特集 -->
 </head>
 
@@ -72,39 +93,34 @@
 <div style="height: 39px;" class="smp-hidden"></div>
 <div id="genre">
 <div class="genre_box">
-<p class="ttl-default ttl-01">総務/庶務</p>
+<p class="ttl-default ttl-01 ttl-sp">総務/庶務</p>
 
   <a href="#healing"><img src="img/ttl-item01.jpg" width="640" height="427" alt="総務/庶務"/></a>
-
-  <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-  <p class="btn btn-1"><a class="button" href="#healing">総務/庶務</a></p>
+  <p class="btn btn-1"><a class="button ttl-default ttl-sp" href="#healing">総務/庶務</a></p>
   
 </div>
 
 <div class="genre_box">
-<p class="ttl-default ttl-02">経理/会計</p>
+<p class="ttl-default ttl-02 ttl-sp">経理/会計</p>
   <a href="#activity"><img src="img/ttl-item02.jpg" width="640" height="427" alt="経理/会計"/></a>
-  <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
   
-   <p class="btn btn-2"><a class="button" href="#activity">経理/会計</a></p>
+   <p class="btn btn-2"><a class="button ttl-default ttl-sp" href="#activity">経理/会計</a></p>
    
 </div>
 
 <div class="genre_box">
-<p class="ttl-default ttl-03">人事/労務</p>
+<p class="ttl-default ttl-03 ttl-sp">人事/労務</p>
   <a href="#vehicle"><img src="img/ttl-item03.jpg" width="640" height="427" alt="人事/労務"/></a>
-  <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
   
-   <p class="btn btn-3"><a class="button" href="#vehicle">人事/労務</a></p>
+   <p class="btn btn-3"><a class="button ttl-default ttl-sp" href="#vehicle">人事/労務</a></p>
   
 </div>
 
 <div class="genre_box">
-<p class="ttl-default ttl-04">テンプレート/ノウハウ</p>
+<p class="ttl-default ttl-04 ttl-sp">テンプレート/ノウハウ</p>
   <a href="#world"><img src="img/ttl-item04.jpg" width="640" height="427" alt="テンプレート/ノウハウ"/></a>
-  <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
   
-   <p class="btn btn-4"><a class="button" href="#world">テンプレート/ノウハウ</a></p>
+   <p class="btn btn-4"><a class="button ttl-default ttl-sp" href="#world">テンプレート/ノウハウ</a></p>
   
 </div>
 
@@ -162,7 +178,7 @@
   </div>
 
 </div>
-<a href="#" class="moreLink btn btn-1">もっと見る</a>
+<a href="#" class="moreLink btn">もっと見る</a>
 </div>
 
 
@@ -215,7 +231,7 @@
   </div>
 
 </div>
-<a href="#" class="moreLink btn btn-2">もっと見る</a>
+<a href="#" class="moreLink btn">もっと見る</a>
 </div>
 
 
@@ -267,7 +283,7 @@
   </div>
 
 </div>
-<a href="#" class="moreLink btn btn-3">もっと見る</a>
+<a href="#" class="moreLink btn">もっと見る</a>
 </div>
 
 
@@ -319,7 +335,7 @@
   </div>
 
 </div>
-<a class="moreLink btn btn-4" href="#">もっと見る</a>
+<a class="moreLink btn" href="#">もっと見る</a>
 </div>
 
 
@@ -328,28 +344,6 @@
 </div>
 </div><!-- main -->
 <p id="page-top" class="page-top"><a class="move-page-top"　href="#wrap">▲</a></p>
-
-<script type="text/javascript">
-$(function() {
-    var topBtn = $('#page-top');
-    topBtn.hide();
-    //スクロールが500に達したらボタン表示
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    //スクロールしてトップ
-    topBtn.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
-});
-</script>
 </body><!-- //body -->
 
 </html>

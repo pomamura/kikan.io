@@ -156,7 +156,7 @@ height:auto;
 
 #genre a {
 text-decoration: none;
-color: #fff;
+color: #000;
 }
 #genre .genre_box img { 
 display:block;
@@ -481,6 +481,12 @@ height:auto;
     font-size: 14px;
     font-weight: bold;
 }
+@media screen and (min-width: 780px) and (max-width : 899px ){
+.ttl-sp{
+    font-size: 8pt;
+    font-weight: bold;
+}
+}
 .ttl-01{
     padding: .25em 0 .25em .75em;
     border-left: 6px solid #ffa1a1;
@@ -604,6 +610,7 @@ a.moreLink {
     width: 40%;
     text-decoration: none;
     color: #fff;
+    background-color: #ccc;
 }
 a.moreLink:hover  {
     margin-top: 20px;
