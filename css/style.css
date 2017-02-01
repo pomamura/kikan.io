@@ -623,7 +623,7 @@ a.moreLink:hover  {
     height;auto;
 }
 .lead-link a{
-    color:000;
+    color: #000;
 }
 .lead-link a:hover{
     opacity: 0.7;
