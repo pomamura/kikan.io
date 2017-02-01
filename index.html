@@ -19,27 +19,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-<script type="text/javascript">
-$(function() {
-    var topBtn = $('#page-top');
-    topBtn.hide();
-    //スクロールが500に達したらボタン表示
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    //スクロールしてトップ
-    topBtn.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
-});
-</script>
 <!--// 生産性UP！業務効率化ツール特集 -->
 </head>
 
@@ -350,7 +329,27 @@ $(function() {
 </div><!-- main -->
 <p id="page-top" class="page-top"><a class="move-page-top"　href="#wrap">▲</a></p>
 
-
+<script type="text/javascript">
+$(function() {
+    var topBtn = $('#page-top');
+    topBtn.hide();
+    //スクロールが500に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
 </body><!-- //body -->
 
 </html>
