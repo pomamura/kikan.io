@@ -622,3 +622,9 @@ a.moreLink:hover  {
     width:100%;
     height;auto;
 }
+.lead-link a{
+    color:000;
+}
+.lead-link a:hover{
+    opacity: 0.7;
+}
